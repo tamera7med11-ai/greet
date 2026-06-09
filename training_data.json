@@ -1,0 +1,215 @@
+{
+  "month": "June 2026",
+  "weeks": [
+    {
+      "week": 1,
+      "label": "Foundation (Jun 1\u20137)",
+      "tasks": [
+        {
+          "id": "w1d1",
+          "day": "Mon Jun 1",
+          "name": "Full-body strength \u2013 3\u00d710 squats, push-ups, rows",
+          "status": "done"
+        },
+        {
+          "id": "w1d2",
+          "day": "Tue Jun 2",
+          "name": "30-min steady-state cardio (run/cycle)",
+          "status": "done"
+        },
+        {
+          "id": "w1d3",
+          "day": "Wed Jun 3",
+          "name": "Core & mobility \u2013 planks, hip flexor stretches",
+          "status": "done"
+        },
+        {
+          "id": "w1d4",
+          "day": "Thu Jun 4",
+          "name": "Upper body \u2013 bench press, overhead press, pull-ups",
+          "status": "done"
+        },
+        {
+          "id": "w1d5",
+          "day": "Fri Jun 5",
+          "name": "Lower body \u2013 deadlifts, lunges, calf raises",
+          "status": "done"
+        },
+        {
+          "id": "w1d6",
+          "day": "Sat Jun 6",
+          "name": "Active recovery \u2013 45-min walk or yoga",
+          "status": "done"
+        },
+        {
+          "id": "w1d7",
+          "day": "Sun Jun 7",
+          "name": "Rest day",
+          "status": "done"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "label": "Building (Jun 8\u201314)",
+      "tasks": [
+        {
+          "id": "w2d1",
+          "day": "Mon Jun 8",
+          "name": "Full-body strength \u2013 increase weight 5%",
+          "status": "done"
+        },
+        {
+          "id": "w2d2",
+          "day": "Tue Jun 9",
+          "name": "Interval cardio \u2013 6\u00d73-min hard / 2-min easy",
+          "status": "todo"
+        },
+        {
+          "id": "w2d3",
+          "day": "Wed Jun 10",
+          "name": "Core circuit \u2013 4 rounds: hollow hold, dead bug, RKC",
+          "status": "todo"
+        },
+        {
+          "id": "w2d4",
+          "day": "Thu Jun 11",
+          "name": "Upper body \u2013 add 1 set per exercise",
+          "status": "todo"
+        },
+        {
+          "id": "w2d5",
+          "day": "Fri Jun 12",
+          "name": "Lower body \u2013 add 1 set per exercise",
+          "status": "todo"
+        },
+        {
+          "id": "w2d6",
+          "day": "Sat Jun 13",
+          "name": "Hike or long bike ride (60 min)",
+          "status": "todo"
+        },
+        {
+          "id": "w2d7",
+          "day": "Sun Jun 14",
+          "name": "Rest day",
+          "status": "todo"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "label": "Intensity (Jun 15\u201321)",
+      "tasks": [
+        {
+          "id": "w3d1",
+          "day": "Mon Jun 15",
+          "name": "Full-body HIIT \u2013 20 min Tabata",
+          "status": "todo"
+        },
+        {
+          "id": "w3d2",
+          "day": "Tue Jun 16",
+          "name": "Tempo run \u2013 5 km at comfortably hard pace",
+          "status": "todo"
+        },
+        {
+          "id": "w3d3",
+          "day": "Wed Jun 17",
+          "name": "Yoga / deep stretch (45 min)",
+          "status": "todo"
+        },
+        {
+          "id": "w3d4",
+          "day": "Thu Jun 18",
+          "name": "Push day \u2013 chest, shoulders, triceps 4\u00d78",
+          "status": "todo"
+        },
+        {
+          "id": "w3d5",
+          "day": "Fri Jun 19",
+          "name": "Pull day \u2013 back, biceps, rear delts 4\u00d78",
+          "status": "todo"
+        },
+        {
+          "id": "w3d6",
+          "day": "Sat Jun 20",
+          "name": "Leg day \u2013 heavy squats & RDLs 4\u00d76",
+          "status": "todo"
+        },
+        {
+          "id": "w3d7",
+          "day": "Sun Jun 21",
+          "name": "Rest day",
+          "status": "todo"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "label": "Peak (Jun 22\u201328)",
+      "tasks": [
+        {
+          "id": "w4d1",
+          "day": "Mon Jun 22",
+          "name": "Max-effort full-body circuit \u2013 5 rounds",
+          "status": "todo"
+        },
+        {
+          "id": "w4d2",
+          "day": "Tue Jun 23",
+          "name": "Long run \u2013 8 km at easy pace",
+          "status": "todo"
+        },
+        {
+          "id": "w4d3",
+          "day": "Wed Jun 24",
+          "name": "Core & stability \u2013 single-leg work, pallof press",
+          "status": "todo"
+        },
+        {
+          "id": "w4d4",
+          "day": "Thu Jun 25",
+          "name": "Upper body strength test \u2013 max reps benchmark",
+          "status": "todo"
+        },
+        {
+          "id": "w4d5",
+          "day": "Fri Jun 26",
+          "name": "Lower body strength test \u2013 1RM squat & deadlift",
+          "status": "todo"
+        },
+        {
+          "id": "w4d6",
+          "day": "Sat Jun 27",
+          "name": "Active recovery swim or cycle (45 min)",
+          "status": "todo"
+        },
+        {
+          "id": "w4d7",
+          "day": "Sun Jun 28",
+          "name": "Rest day",
+          "status": "todo"
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "label": "Recovery (Jun 29\u201330)",
+      "tasks": [
+        {
+          "id": "w5d1",
+          "day": "Mon Jun 29",
+          "name": "Light full-body movement \u2013 50% intensity",
+          "status": "todo"
+        },
+        {
+          "id": "w5d2",
+          "day": "Tue Jun 30",
+          "name": "End-of-month review + mobility session",
+          "status": "todo"
+        }
+      ]
+    }
+  ]
+}
