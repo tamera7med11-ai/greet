@@ -258,6 +258,204 @@ QUIZ_BANK = {
             },
         ],
     },
+    "c7l_gold": {
+        "name": "C7L Gold Quiz",
+        "product": "TCL C7L",
+        "level": "gold",
+        "pass_pct": 85,
+        "questions": [
+            {
+                "q": "A customer with a 65\" C7L reports motion blur during fast sports. What do you advise?",
+                "options": [
+                    "A) Tell them it's a defect and offer a refund",
+                    "B) Enable Motion Clarity / MEMC in the picture settings",
+                    "C) Suggest they buy a different brand",
+                    "D) Reduce the refresh rate",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "Which local dimming setting gives the best contrast on the C7L for a dark room?",
+                "options": ["A) Off", "B) Low", "C) Medium", "D) High"],
+                "answer": "D",
+                "pts": 1,
+            },
+            {
+                "q": "A customer asks about the difference between Dolby Vision and HDR10+. You say:",
+                "options": [
+                    "A) They are identical formats",
+                    "B) Dolby Vision uses dynamic metadata per-scene; HDR10+ does too but via a different ecosystem",
+                    "C) HDR10+ is always better",
+                    "D) Neither format matters for picture quality",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "A competitor's promoter tells a customer that OLED has better picture than Mini-LED. How do you respond?",
+                "options": [
+                    "A) Agree — OLED is always better",
+                    "B) Explain that Mini-LED offers higher peak brightness and no burn-in risk at a better price point",
+                    "C) Say nothing",
+                    "D) Offer a bigger discount immediately",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "What is the benefit of the C7L's ALLM (Auto Low Latency Mode)?",
+                "options": [
+                    "A) Automatically adjusts volume",
+                    "B) Switches to Game mode automatically when a console is detected, reducing input lag",
+                    "C) Enables automatic software updates",
+                    "D) Increases brightness when gaming",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "A customer wants the best picture for HDR movies at home in a dim room. Which picture mode?",
+                "options": ["A) Vivid", "B) Standard", "C) Movie / Cinema", "D) Dynamic"],
+                "answer": "C",
+                "pts": 1,
+            },
+            {
+                "q": "The C7L supports eARC on which HDMI port?",
+                "options": ["A) HDMI 1", "B) HDMI 2", "C) HDMI 3 (eARC)", "D) All ports support eARC"],
+                "answer": "C",
+                "pts": 1,
+            },
+            {
+                "q": "A customer already owns a Sonos soundbar. Which C7L feature ensures best audio compatibility?",
+                "options": ["A) Bluetooth only", "B) eARC for lossless audio passthrough", "C) Built-in speakers", "D) Optical out only"],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "What is the correct way to describe TCL's Olympic partnership to a customer?",
+                "options": [
+                    "A) TCL sponsors local sports only",
+                    "B) TCL is a Worldwide Olympic Partner — same tier as Coca-Cola and Samsung",
+                    "C) TCL sponsors the Olympics in China only",
+                    "D) TCL is an unofficial Olympic supporter",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "A customer asks if the C7L will support new apps in 3 years. Your answer:",
+                "options": [
+                    "A) No guarantees",
+                    "B) Google TV receives ongoing updates and new apps via the Play Store",
+                    "C) The TV will need replacement in 2 years",
+                    "D) Only pre-installed apps are available",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "Which C7L feature is most relevant for a customer with a PS5 or Xbox Series X?",
+                "options": [
+                    "A) Built-in Chromecast",
+                    "B) HDMI 2.1 with 4K 120Hz + VRR + ALLM",
+                    "C) USB recording",
+                    "D) Dolby Atmos audio",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "A customer is deciding between 55\" and 65\" C7L for a 3-metre viewing distance. You recommend:",
+                "options": [
+                    "A) 55\" — bigger is always worse",
+                    "B) 65\" — at 3m the larger screen gives a more immersive 4K experience",
+                    "C) Neither — they need a projector",
+                    "D) 55\" only if they watch sports",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "What does the 'Mini' in Mini-LED refer to?",
+                "options": [
+                    "A) A smaller TV size",
+                    "B) Thousands of tiny LED backlights enabling precise zone dimming",
+                    "C) A mini remote control",
+                    "D) Reduced power consumption only",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "After closing a C7L sale, what is the ideal next step to build loyalty?",
+                "options": [
+                    "A) Walk away immediately",
+                    "B) Help set up Google TV, show key features, and share TCL support contact",
+                    "C) Upsell a different brand's accessories",
+                    "D) Hand them a warranty card and say goodbye",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "A store manager asks you to summarise why C7L outsells competitors in your region. You say:",
+                "options": [
+                    "A) Price is the only reason",
+                    "B) Best Mini-LED contrast at mid-range price + Google TV ecosystem + Olympic brand credibility",
+                    "C) Marketing budget is higher",
+                    "D) The warranty is longer",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "A customer saw the C7L cheaper online. What is the best response?",
+                "options": [
+                    "A) Match the price immediately",
+                    "B) Highlight in-store value: setup support, warranty service, and hands-on demo experience",
+                    "C) Tell them to buy online",
+                    "D) Ignore the objection",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "What picture setting should you AVOID leaving on during a demo to prevent screen burn perception?",
+                "options": ["A) Movie mode", "B) Static logo channel for extended periods", "C) HDR content", "D) Low brightness"],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "The C7L's Dolby Atmos support means:",
+                "options": [
+                    "A) The TV has built-in ceiling speakers",
+                    "B) It can decode and pass through Dolby Atmos object-based audio to compatible soundbars",
+                    "C) Audio quality is the same as any TV",
+                    "D) Only stereo sound is supported",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "Which selling technique is most effective after a customer says 'I need to think about it'?",
+                "options": [
+                    "A) End the conversation",
+                    "B) Ask 'What specifically would you like to think about?' to uncover the real objection",
+                    "C) Offer a 50% discount",
+                    "D) Call them the next day",
+                ],
+                "answer": "B",
+                "pts": 1,
+            },
+            {
+                "q": "To qualify for Gold level in the TCL promoter programme, a promoter needs how many points?",
+                "options": ["A) 50", "B) 75", "C) 100", "D) 150"],
+                "answer": "C",
+                "pts": 1,
+            },
+        ],
+    },
 }
 
 
@@ -632,34 +830,133 @@ def cmd_comp_results(data: dict, args: list) -> None:
     print()
 
 
+# ── Commands: report ─────────────────────────────────────────────────────────
+
+def cmd_report(data: dict) -> None:
+    ps = sorted(data["promoters"].values(), key=lambda x: x["points"], reverse=True)
+    comps = list(data["competitions"].values())
+    month = date.today().strftime("%B %Y")
+
+    sep = "═" * 66
+
+    print(f"\n  {sep}")
+    print(f"  TCL ELECTRONICS KSA — PROMOTER TRAINING REPORT")
+    print(f"  Generated: {TODAY}  |  Period: {month}")
+    print(f"  {sep}\n")
+
+    # ── Summary stats ──
+    total_p = len(ps)
+    if total_p == 0:
+        print("  No promoters registered yet.")
+        return
+
+    avg_pts = sum(p["points"] for p in ps) / total_p
+    levels_count = {}
+    for p in ps:
+        levels_count[p["level"]] = levels_count.get(p["level"], 0) + 1
+
+    print(f"  SUMMARY")
+    print(f"  {'─' * 40}")
+    print(f"  Total promoters     : {total_p}")
+    print(f"  Average points      : {avg_pts:.1f}")
+    print(f"  Competitions run    : {len(comps)}")
+    print()
+    for lvl, badge in LEVEL_BADGES.items():
+        count = levels_count.get(lvl, 0)
+        bar = "█" * count
+        print(f"  {badge} {lvl:<10} : {count:>3}  {bar}")
+    print()
+
+    # ── Leaderboard ──
+    print(f"  LEADERBOARD")
+    print(f"  {'─' * 40}")
+    print(f"  {'#':<4} {'Name':<22} {'Store':<20} {'Pts':>5}  Level")
+    for i, p in enumerate(ps, 1):
+        badge = LEVEL_BADGES[p["level"]]
+        medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(i, f"  {i}.")
+        print(f"  {medal:<4} {p['name']:<22} {p['store']:<20} {p['points']:>5}  {badge} {p['level']}")
+    print()
+
+    # ── Quiz performance ──
+    print(f"  QUIZ PERFORMANCE")
+    print(f"  {'─' * 40}")
+    print(f"  {'Name':<22} {'Quizzes':>8} {'Passed':>7} {'Avg %':>7}  Highest")
+    for p in ps:
+        results = p.get("quiz_results", [])
+        if not results:
+            print(f"  {p['name']:<22} {'—':>8}")
+            continue
+        passed = [r for r in results if r["passed"]]
+        avg = int(sum(r["pct"] for r in results) / len(results))
+        best = max(results, key=lambda r: r["pct"])
+        print(f"  {p['name']:<22} {len(results):>8} {len(passed):>7} {avg:>6}%  {best['quiz']} ({best['pct']}%)")
+    print()
+
+    # ── Competition history ──
+    if comps:
+        print(f"  COMPETITION RESULTS")
+        print(f"  {'─' * 40}")
+        for c in comps:
+            if not c["entries"]:
+                continue
+            ranked = sorted(c["entries"], key=lambda e: e["weighted_score"], reverse=True)
+            print(f"  {c['name']}  ({c['date']})")
+            for i, e in enumerate(ranked[:3], 1):
+                medal = {1: "🥇", 2: "🥈", 3: "🥉"}[i]
+                print(f"    {medal} {e['promoter_name']:<22} {e['weighted_score']:.3f}/4.00  ({e['pct']}%)")
+            print()
+
+    # ── Next steps ──
+    print(f"  RECOMMENDED NEXT STEPS")
+    print(f"  {'─' * 40}")
+    no_quiz = [p["name"] for p in ps if not p.get("quiz_results")]
+    if no_quiz:
+        print(f"  • Pending first quiz : {', '.join(no_quiz)}")
+    bronze_only = [p["name"] for p in ps if p["level"] == "Bronze" and p["points"] > 0]
+    if bronze_only:
+        print(f"  • Push to Silver (50 pts): {', '.join(bronze_only)}")
+    top = ps[0] if ps else None
+    if top:
+        next_lvl = next((name for thr, name in reversed(LEVELS) if thr > top["points"]), None)
+        if next_lvl:
+            gap = next(thr for thr, name in LEVELS if name == next_lvl) - top["points"]
+            print(f"  • Leader {top['name']} needs {gap} more pts to reach {next_lvl}")
+    print(f"\n  {sep}\n")
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 USAGE = """
   TCL Electronics KSA — Promoter Training System
 
   PROMOTER MANAGEMENT
-    promoter add  <name> <store>     Register a new promoter
-    promoter list                    List all promoters
-    promoter show <id>               Show promoter profile and history
+    promoter add  <name> <store>       Register a new promoter
+    promoter list                      List all promoters
+    promoter show <id>                 Show promoter profile and history
 
   QUIZZES
-    quiz list                        List available quizzes
+    quiz list                          List available quizzes
     quiz run  <quiz_id> <promoter_id>  Run an interactive quiz
+      quiz IDs: c7l_bronze · c7l_silver · c7l_gold
 
   LEADERBOARD
-    leaderboard                      Show ranked standings
+    leaderboard                        Show ranked standings
 
   COMPETITIONS
-    comp new     <name>              Create a new competition
-    comp list                        List all competitions
+    comp new     <name>                Create a new competition
+    comp list                          List all competitions
     comp score   <comp_id> <promo_id>  Score a promoter's entry
-    comp rank    <comp_id>           Finalize rankings + award points
-    comp results <comp_id>           View competition results table
+    comp rank    <comp_id>             Finalize rankings + award points
+    comp results <comp_id>             View competition results table
+
+  REPORT
+    report                             Full training summary report
 
   EXAMPLES
     python tcl_training.py promoter add "Ahmed Ali" "Riyadh Mall"
-    python tcl_training.py quiz run c7l_bronze P001
+    python tcl_training.py quiz run c7l_gold P001
     python tcl_training.py leaderboard
+    python tcl_training.py report
     python tcl_training.py comp new "C7L Phase 2 Live Demo"
     python tcl_training.py comp score C001 P001
     python tcl_training.py comp rank C001
@@ -690,6 +987,7 @@ def main() -> None:
         ("comp",     "score"):   lambda: cmd_comp_score(data, rest),
         ("comp",     "rank"):    lambda: cmd_comp_rank(data, rest),
         ("comp",     "results"): lambda: cmd_comp_results(data, rest),
+        ("report",   ""):        lambda: cmd_report(data),
     }
 
     fn = dispatch.get((cmd, sub))
