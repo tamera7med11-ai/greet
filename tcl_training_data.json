@@ -1,0 +1,162 @@
+{
+  "promoters": {
+    "P001": {
+      "id": "P001",
+      "name": "Ahmed Ali",
+      "store": "Riyadh Mall",
+      "joined": "2026-06-11",
+      "points": 45,
+      "level": "Bronze",
+      "quiz_results": [
+        {
+          "quiz": "c7l_bronze",
+          "score": 10,
+          "total": 10,
+          "pct": 100,
+          "passed": true,
+          "date": "2026-06-11"
+        }
+      ],
+      "comp_entries": [
+        {
+          "comp": "C001",
+          "weighted_score": 3.4,
+          "date": "2026-06-11",
+          "rank": 2
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-06-11",
+          "pts": 10,
+          "reason": "C7L Bronze Quiz pass"
+        },
+        {
+          "date": "2026-06-11",
+          "pts": 5,
+          "reason": "C7L Bronze Quiz perfect score bonus"
+        },
+        {
+          "date": "2026-06-11",
+          "pts": 15,
+          "reason": "Submitted to C7L Mastery Phase 1"
+        },
+        {
+          "date": "2026-06-11",
+          "pts": 15,
+          "reason": "C7L Mastery Phase 1 rank #2"
+        }
+      ]
+    },
+    "P002": {
+      "id": "P002",
+      "name": "Sara Hassan",
+      "store": "Jeddah Plaza",
+      "joined": "2026-06-11",
+      "points": 40,
+      "level": "Bronze",
+      "quiz_results": [],
+      "comp_entries": [
+        {
+          "comp": "C001",
+          "weighted_score": 3.75,
+          "date": "2026-06-11",
+          "rank": 1
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-06-11",
+          "pts": 15,
+          "reason": "Submitted to C7L Mastery Phase 1"
+        },
+        {
+          "date": "2026-06-11",
+          "pts": 25,
+          "reason": "C7L Mastery Phase 1 rank #1"
+        }
+      ]
+    },
+    "P003": {
+      "id": "P003",
+      "name": "Khalid Omar",
+      "store": "Dammam Center",
+      "joined": "2026-06-11",
+      "points": 25,
+      "level": "Bronze",
+      "quiz_results": [],
+      "comp_entries": [
+        {
+          "comp": "C001",
+          "weighted_score": 2.65,
+          "date": "2026-06-11",
+          "rank": 3
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-06-11",
+          "pts": 15,
+          "reason": "Submitted to C7L Mastery Phase 1"
+        },
+        {
+          "date": "2026-06-11",
+          "pts": 10,
+          "reason": "C7L Mastery Phase 1 rank #3"
+        }
+      ]
+    }
+  },
+  "competitions": {
+    "C001": {
+      "id": "C001",
+      "name": "C7L Mastery Phase 1",
+      "date": "2026-06-11",
+      "entries": [
+        {
+          "promoter_id": "P001",
+          "promoter_name": "Ahmed Ali",
+          "store": "Riyadh Mall",
+          "scores": {
+            "knowledge": 3,
+            "creativity": 3,
+            "selling": 4
+          },
+          "weighted_score": 3.4,
+          "pct": 85,
+          "date": "2026-06-11",
+          "rank": 2
+        },
+        {
+          "promoter_id": "P002",
+          "promoter_name": "Sara Hassan",
+          "store": "Jeddah Plaza",
+          "scores": {
+            "knowledge": 4,
+            "creativity": 3,
+            "selling": 4
+          },
+          "weighted_score": 3.75,
+          "pct": 93,
+          "date": "2026-06-11",
+          "rank": 1
+        },
+        {
+          "promoter_id": "P003",
+          "promoter_name": "Khalid Omar",
+          "store": "Dammam Center",
+          "scores": {
+            "knowledge": 2,
+            "creativity": 3,
+            "selling": 3
+          },
+          "weighted_score": 2.65,
+          "pct": 66,
+          "date": "2026-06-11",
+          "rank": 3
+        }
+      ],
+      "ranked": true
+    }
+  }
+}
