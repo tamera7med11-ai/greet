@@ -1,0 +1,46 @@
+
+  ══════════════════════════════════════════════════════════════════
+  TCL ELECTRONICS KSA — PROMOTER TRAINING REPORT
+  Generated: 2026-06-11  |  Period: June 2026
+  ══════════════════════════════════════════════════════════════════
+
+  SUMMARY
+  ────────────────────────────────────────
+  Total promoters     : 3
+  Average points      : 36.7
+  Competitions run    : 1
+
+  🏆 Champion   :   0  
+  🥇 Gold       :   0  
+  🥈 Silver     :   0  
+  🥉 Bronze     :   3  ███
+
+  LEADERBOARD
+  ────────────────────────────────────────
+  #    Name                   Store                  Pts  Level
+  🥇    Ahmed Ali              Riyadh Mall             45  🥉 Bronze
+  🥈    Sara Hassan            Jeddah Plaza            40  🥉 Bronze
+  🥉    Khalid Omar            Dammam Center           25  🥉 Bronze
+
+  QUIZ PERFORMANCE
+  ────────────────────────────────────────
+  Name                    Quizzes  Passed   Avg %  Highest
+  Ahmed Ali                     1       1    100%  c7l_bronze (100%)
+  Sara Hassan                   —
+  Khalid Omar                   —
+
+  COMPETITION RESULTS
+  ────────────────────────────────────────
+  C7L Mastery Phase 1  (2026-06-11)
+    🥇 Sara Hassan            3.750/4.00  (93%)
+    🥈 Ahmed Ali              3.400/4.00  (85%)
+    🥉 Khalid Omar            2.650/4.00  (66%)
+
+  RECOMMENDED NEXT STEPS
+  ────────────────────────────────────────
+  • Pending first quiz : Sara Hassan, Khalid Omar
+  • Push to Silver (50 pts): Ahmed Ali, Sara Hassan, Khalid Omar
+  • Leader Ahmed Ali needs 5 more pts to reach Silver
+
+  ══════════════════════════════════════════════════════════════════
+
