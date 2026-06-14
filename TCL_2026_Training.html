@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCL 2026 TV Lineup — Training Presentation</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  .reveal-viewport { background: #000; }
+  .reveal { background: #000; }
+  .reveal .slides > section { background: #000; text-align: center; }
+  .reveal .slides { color: #fff; }
+
+  .reveal {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* ── Giant Number ── */
+  .num {
+    font-size: clamp(5em, 18vw, 11em);
+    font-weight: 900;
+    color: #fff;
+    line-height: 0.9;
+    letter-spacing: -4px;
+    display: block;
+  }
+  .num-unit {
+    font-size: 0.35em;
+    font-weight: 300;
+    letter-spacing: 0;
+    vertical-align: middle;
+  }
+
+  /* ── Headlines ── */
+  .headline {
+    font-size: clamp(2em, 5.5vw, 4.2em);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.05;
+    letter-spacing: -1px;
+  }
+  .headline-sm {
+    font-size: clamp(1.4em, 3.5vw, 2.8em);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+  }
+
+  /* ── Model Hero ── */
+  .model-hero {
+    font-size: clamp(4.5em, 16vw, 10em);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+
+  /* ── Spec & Labels ── */
+  .spec   { font-size: clamp(1.1em, 3vw, 2em);   font-weight: 300; color: #fff;     margin-top: 18px; display: block; }
+  .model  { font-size: clamp(0.8em, 2vw, 1.3em);  font-weight: 700; color: #E8002D;  letter-spacing: 3px; text-transform: uppercase; margin-top: 12px; display: block; }
+  .subhead{ font-size: clamp(0.9em, 2.5vw, 1.7em); font-weight: 300; color: #bbb;    margin-top: 14px; display: block; line-height: 1.4; }
+  .tagline{ font-size: clamp(0.8em, 2vw, 1.4em);  font-weight: 300; color: #777;     letter-spacing: 1px; margin-top: 10px; display: block; }
+  .label  { font-size: clamp(0.7em, 1.5vw, 1.1em); font-weight: 700; color: #E8002D; text-transform: uppercase; letter-spacing: 5px; margin-bottom: 18px; display: block; }
+
+  /* ── Divider ── */
+  .line { width: 50px; height: 3px; background: #E8002D; margin: 22px auto; }
+  .line-gold { width: 50px; height: 3px; background: #D4AF37; margin: 22px auto; }
+
+  /* ── TCL Logo ── */
+  .tcl-logo { font-size: clamp(1.4em, 3vw, 2.2em); font-weight: 900; color: #E8002D; letter-spacing: 8px; text-transform: uppercase; display: block; }
+
+  /* ── Colors ── */
+  .red  { color: #E8002D; }
+  .gold { color: #D4AF37; }
+  .gray { color: #666; }
+  .white{ color: #fff; }
+
+  /* ── Badge ── */
+  .badge {
+    display: inline-block; background: #E8002D; color: #fff;
+    font-size: 0.28em; font-weight: 700; letter-spacing: 3px;
+    padding: 5px 14px; border-radius: 2px; text-transform: uppercase;
+    vertical-align: middle; margin-left: 14px; position: relative; top: -8px;
+  }
+
+  /* ── Feature Table ── */
+  .feat {
+    list-style: none; text-align: left;
+    max-width: 680px; margin: 0 auto;
+  }
+  .feat li {
+    font-size: clamp(0.85em, 2vw, 1.35em);
+    font-weight: 400; color: #ccc;
+    padding: 9px 0; border-bottom: 1px solid #1a1a1a;
+    display: flex; justify-content: space-between;
+  }
+  .feat li .v { color: #fff; font-weight: 700; }
+
+  /* ── Sizes ── */
+  .sizes { font-size: clamp(1.8em, 5vw, 3.5em); font-weight: 700; color: #fff; letter-spacing: 2px; }
+
+  /* ── Step list ── */
+  .step { font-size: clamp(1.1em, 2.5vw, 1.9em); font-weight: 700; color: #fff; margin: 14px 0; text-align: left; max-width: 700px; margin-left: auto; margin-right: auto; }
+  .step .n { color: #E8002D; margin-right: 14px; font-weight: 900; }
+
+  /* ── Compare ── */
+  .compare { display: flex; gap: 2px; justify-content: center; margin-top: 20px; }
+  .cbox { flex: 1; max-width: 280px; padding: 24px 20px; border: 1px solid #222; border-radius: 4px; }
+  .cbox h3 { font-size: 1.4em; font-weight: 900; color: #E8002D; margin-bottom: 12px; }
+  .cbox p  { font-size: 0.85em; color: #999; line-height: 1.6; }
+
+  /* ── Certified ── */
+  .certified {
+    font-size: clamp(3.5em, 12vw, 8em);
+    font-weight: 900; color: #D4AF37;
+    line-height: 1; letter-spacing: -2px;
+  }
+
+  /* ── Fragment override ── */
+  .reveal .fragment { opacity: 0; transition: opacity 0.5s ease; }
+  .reveal .fragment.visible { opacity: 1; }
+
+  /* ── Progress bar ── */
+  .reveal .progress { color: #E8002D; }
+  .reveal .controls { color: #E8002D; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+
+<!-- ══════════════════════════════════════════════════════════
+     01  OPENING — HOOK
+══════════════════════════════════════════════════════════ -->
+
+<!-- 1 -->
+<section data-auto-animate data-transition="fade">
+  <br><br><br>
+  <span class="tcl-logo">TCL</span>
+</section>
+
+<!-- 2 -->
+<section data-auto-animate data-transition="fade">
+  <span class="tcl-logo">TCL</span>
+  <span data-id="yr" class="num" style="margin-top:16px;">2026</span>
+</section>
+
+<!-- 3 -->
+<section data-transition="fade">
+  <span class="label">Training Material</span>
+  <h1 class="headline">The Complete<br>TCL TV Lineup.</h1>
+  <div class="line"></div>
+  <span class="subhead">10 Models. One Vision.</span>
+</section>
+
+<!-- 4 -->
+<section data-transition="fade">
+  <br><br>
+  <h2 class="headline fragment fade-in">This is not a product catalogue.</h2>
+  <span class="subhead fragment fade-in" style="margin-top:28px;">This is your competitive edge.</span>
+</section>
+
+<!-- 5 -->
+<section data-transition="fade">
+  <br><br><br>
+  <h1 class="headline">Let's begin.</h1>
+  <div class="line"></div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     02  LINEUP OVERVIEW
+══════════════════════════════════════════════════════════ -->
+
+<!-- 6 -->
+<section data-transition="fade">
+  <span class="label">2026</span>
+  <h1 class="headline">What changed<br>this year?</h1>
+</section>
+
+<!-- 7 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="ev" class="num">Everything.</span>
+</section>
+
+<!-- 8 -->
+<section data-auto-animate data-transition="fade">
+  <h2 data-id="ev" class="headline" style="font-size:2.6em;">Everything.</h2>
+  <div class="line"></div>
+  <span class="subhead fragment fade-in">SQD Technology — across the premium range.</span>
+  <span class="subhead fragment fade-in">RGB MiniLED — for the ultra-large category.</span>
+  <span class="subhead fragment fade-in">Dolby Vision 2 Max — exclusive to TCL.</span>
+</section>
+
+<!-- 9 -->
+<section data-transition="fade">
+  <span class="label">2026 Full Lineup</span>
+  <ul class="feat">
+    <li>X11L  <span class="v">Flagship · SQD MiniLED · 10,000 nits</span></li>
+    <li>RM9L  <span class="v">Ultra-Large · RGB MiniLED · 9,000 nits</span></li>
+    <li>C8L   <span class="v">Premium · SQD MiniLED · 6,000 nits</span></li>
+    <li>C7L   <span class="v">Best Seller · SQD MiniLED · 3,000 nits</span></li>
+    <li>RM7L  <span class="v">Large · RGB MiniLED · 2,000 nits</span></li>
+    <li>C6L   <span class="v">Mid Premium · QLED</span></li>
+    <li>P8L / P7L / P6L <span class="v">Value · 4K Smart</span></li>
+    <li>V6D / T6D <span class="v">Entry · Smart TV</span></li>
+  </ul>
+</section>
+
+<!-- 10 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">Know the lineup.<br><span class="red">Own the floor.</span></h1>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     03  X11L — FLAGSHIP
+══════════════════════════════════════════════════════════ -->
+
+<!-- 11 -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Flagship</span>
+  <h1 class="model-hero">X11L</h1>
+  <span class="tagline">The pinnacle of display technology.</span>
+</section>
+
+<!-- 12 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">There is no TV<br>above the X11L.</h1>
+</section>
+
+<!-- 13 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="x-nits" class="num">10,000</span>
+</section>
+
+<!-- 14 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="x-nits" class="num">10,000</span>
+  <span class="spec">Peak Nits of Brightness</span>
+  <span class="model">TCL X11L</span>
+</section>
+
+<!-- 15 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="x-zones" class="num">20,000<span class="num-unit">+</span></span>
+</section>
+
+<!-- 16 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="x-zones" class="num">20,000<span class="num-unit">+</span></span>
+  <span class="spec">Local Dimming Zones</span>
+  <span class="model">The most precise backlight ever built.</span>
+</section>
+
+<!-- 17 -->
+<section data-transition="fade">
+  <span class="label">Panel Technology</span>
+  <h1 class="headline">WHVA 2.0 Ultra</h1>
+  <div class="line"></div>
+  <span class="subhead">Wide High Viewing Angle — 2nd Generation.</span>
+  <span class="subhead fragment fade-in" style="margin-top:20px;">Perfect color from every seat in the room.</span>
+</section>
+
+<!-- 18 -->
+<section data-transition="fade">
+  <span class="label">X11L Full Specs</span>
+  <ul class="feat">
+    <li>Panel       <span class="v">WHVA 2.0 Ultra</span></li>
+    <li>Backlight   <span class="v">SQD MiniLED</span></li>
+    <li>Peak Brightness <span class="v">10,000 nits</span></li>
+    <li>Dimming Zones   <span class="v">20,000+</span></li>
+    <li>HDR Support     <span class="v">Dolby Vision · HDR10+</span></li>
+    <li>Screen Sizes    <span class="v">75" · 85" · 98"</span></li>
+  </ul>
+</section>
+
+<!-- 19 -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Available In</span>
+  <h1 class="sizes">75"&nbsp;&nbsp;&nbsp;85"&nbsp;&nbsp;&nbsp;98"</h1>
+  <div class="line"></div>
+  <span class="subhead">From premium to palace.</span>
+</section>
+
+<!-- 20 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">There's nothing<br>above it.</h1>
+  <span class="model" style="margin-top:28px; font-size:1.4em;">TCL X11L</span>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     04  RM9L — RGB MiniLED ULTRA-LARGE
+══════════════════════════════════════════════════════════ -->
+
+<!-- 21 -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Ultra-Large Premium</span>
+  <h1 class="model-hero">RM9L</h1>
+  <span class="tagline">RGB MiniLED. Reimagined.</span>
+</section>
+
+<!-- 22 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline fragment fade-in">Massive screen.</h1>
+  <h1 class="headline fragment fade-in">Massive brightness.</h1>
+  <h1 class="headline fragment fade-in" style="color:#E8002D;">Massive impact.</h1>
+</section>
+
+<!-- 23 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="r9-nits" class="num">9,000</span>
+</section>
+
+<!-- 24 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="r9-nits" class="num">9,000</span>
+  <span class="spec">Peak Nits · RGB MiniLED</span>
+  <span class="model">TCL RM9L</span>
+</section>
+
+<!-- 25 -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Screen Sizes</span>
+  <h1 class="sizes">85"&nbsp;&nbsp;&nbsp;98"&nbsp;&nbsp;&nbsp;115"</h1>
+  <div class="line"></div>
+  <span class="subhead">When bigger is the point.</span>
+</section>
+
+<!-- 26 -->
+<section data-transition="fade">
+  <span class="label">RM9L Full Specs</span>
+  <ul class="feat">
+    <li>Backlight       <span class="v">RGB MiniLED</span></li>
+    <li>Peak Brightness <span class="v">9,000 nits</span></li>
+    <li>Color Volume    <span class="v">Ultra-wide color gamut</span></li>
+    <li>HDR Support     <span class="v">Dolby Vision · HDR10+</span></li>
+    <li>Screen Sizes    <span class="v">85" · 98" · 115"</span></li>
+  </ul>
+</section>
+
+<!-- 27 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">For the customer<br>who wants it all<br><span class="red">— and larger.</span></h1>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     05  C8L — PREMIUM SQD
+══════════════════════════════════════════════════════════ -->
+
+<!-- 28 -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Premium</span>
+  <h1 class="model-hero">C8L</h1>
+  <span class="tagline">SQD MiniLED. Perfected.</span>
+</section>
+
+<!-- 29 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="c8-nits" class="num">6,000</span>
+</section>
+
+<!-- 30 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="c8-nits" class="num">6,000</span>
+  <span class="spec">Peak Nits · SQD MiniLED</span>
+  <span class="model">TCL C8L</span>
+</section>
+
+<!-- 31 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="c8-zones" class="num">4,032</span>
+</section>
+
+<!-- 32 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="c8-zones" class="num">4,032</span>
+  <span class="spec">Local Dimming Zones</span>
+  <span class="model">Precision you can see.</span>
+</section>
+
+<!-- 33 -->
+<section data-transition="fade">
+  <br>
+  <span class="label">World Exclusive</span>
+  <h1 class="headline">Dolby Vision 2 Max<span class="badge">Exclusive</span></h1>
+  <div class="line"></div>
+  <span class="subhead fragment fade-in">Only available on the TCL C8L.</span>
+  <span class="subhead fragment fade-in" style="margin-top:10px;">No other brand has this. <span class="red">Use it.</span></span>
+</section>
+
+<!-- 34 -->
+<section data-transition="fade">
+  <span class="label">C8L Full Specs</span>
+  <ul class="feat">
+    <li>Technology      <span class="v">SQD MiniLED</span></li>
+    <li>Peak Brightness <span class="v">6,000 nits</span></li>
+    <li>Dimming Zones   <span class="v">4,032</span></li>
+    <li>Exclusive HDR   <span class="v red">Dolby Vision 2 Max ★</span></li>
+    <li>HDR also        <span class="v">HDR10+</span></li>
+    <li>Screen Sizes    <span class="v">55" to 98"</span></li>
+  </ul>
+</section>
+
+<!-- 35 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">Premium picture.<br><span class="red">Exclusive technology.</span></h1>
+  <span class="model" style="margin-top:28px; font-size:1.3em;">TCL C8L</span>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     06  C7L — BEST SELLER
+══════════════════════════════════════════════════════════ -->
+
+<!-- 36 -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Best Seller</span>
+  <h1 class="model-hero">C7L</h1>
+  <span class="tagline">SQD MiniLED. For everyone.</span>
+</section>
+
+<!-- 37 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">The one they'll<br>ask for by name.</h1>
+</section>
+
+<!-- 38 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="c7-nits" class="num">3,000</span>
+</section>
+
+<!-- 39 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="c7-nits" class="num">3,000</span>
+  <span class="spec">Peak Nits · SQD MiniLED</span>
+  <span class="model">TCL C7L</span>
+</section>
+
+<!-- 40 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="c7-zones" class="num">2,176</span>
+</section>
+
+<!-- 41 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="c7-zones" class="num">2,176</span>
+  <span class="spec">Local Dimming Zones</span>
+  <span class="model">Blacks this deep have never been this affordable.</span>
+</section>
+
+<!-- 42 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="c7-hz" class="num">144<span class="num-unit">Hz</span></span>
+</section>
+
+<!-- 43 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="c7-hz" class="num">144<span class="num-unit">Hz</span></span>
+  <span class="spec">Refresh Rate</span>
+  <span class="model">Zero blur. Zero ghosting.</span>
+</section>
+
+<!-- 44 -->
+<section data-transition="fade">
+  <br>
+  <h1 class="headline fragment fade-in">Gaming.</h1>
+  <h1 class="headline fragment fade-in">Movies.</h1>
+  <h1 class="headline fragment fade-in">Sports.</h1>
+  <h1 class="headline fragment fade-in"><span class="red">Everything.</span></h1>
+</section>
+
+<!-- 45 -->
+<section data-transition="fade">
+  <span class="label">C7L Full Specs</span>
+  <ul class="feat">
+    <li>Technology      <span class="v">SQD MiniLED</span></li>
+    <li>Peak Brightness <span class="v">3,000 nits</span></li>
+    <li>Dimming Zones   <span class="v">Up to 2,176</span></li>
+    <li>Refresh Rate    <span class="v">144Hz</span></li>
+    <li>HDR Support     <span class="v">Dolby Vision · HDR10+</span></li>
+    <li>Screen Sizes    <span class="v">55" to 98"</span></li>
+    <li>Color Combos    <span class="v">1.07 Billion</span></li>
+  </ul>
+</section>
+
+<!-- 46 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">The best seller<br>for a reason.</h1>
+  <span class="model" style="margin-top:28px; font-size:1.3em;">TCL C7L</span>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     07  RM7L — RGB MiniLED VALUE LARGE
+══════════════════════════════════════════════════════════ -->
+
+<!-- 47 -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Large Screen Value</span>
+  <h1 class="model-hero">RM7L</h1>
+  <span class="tagline">RGB MiniLED. Bold colors at scale.</span>
+</section>
+
+<!-- 48 -->
+<section data-auto-animate data-transition="fade">
+  <br><br>
+  <span data-id="r7-nits" class="num">2,000</span>
+</section>
+
+<!-- 49 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="r7-nits" class="num">2,000</span>
+  <span class="spec">Peak Nits · RGB MiniLED</span>
+  <span class="model">TCL RM7L</span>
+</section>
+
+<!-- 50 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">Big screen.<br>Bold colors.<br><span class="red">Better value.</span></h1>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     08  MID RANGE — C6L · P8L · P7L · P6L
+══════════════════════════════════════════════════════════ -->
+
+<!-- 51 -->
+<section data-transition="fade">
+  <br>
+  <span class="label">Mid Range</span>
+  <h1 class="headline">C6L · P8L · P7L · P6L</h1>
+  <div class="line"></div>
+  <span class="subhead">Smart. Sharp. Affordable.</span>
+</section>
+
+<!-- 52 -->
+<section data-transition="fade">
+  <span class="label">QLED · Mid Premium</span>
+  <h1 class="model-hero" style="font-size:6em;">C6L</h1>
+  <div class="line"></div>
+  <ul class="feat" style="margin-top:10px;">
+    <li>Technology <span class="v">QLED</span></li>
+    <li>Resolution <span class="v">4K Ultra HD</span></li>
+    <li>HDR        <span class="v">Dolby Vision · HDR10+</span></li>
+  </ul>
+</section>
+
+<!-- 53 -->
+<section data-transition="fade">
+  <span class="label">MiniLED Entry · Value Premium</span>
+  <h1 class="model-hero" style="font-size:6em;">P8L</h1>
+  <div class="line"></div>
+  <ul class="feat" style="margin-top:10px;">
+    <li>Technology <span class="v">MiniLED</span></li>
+    <li>Resolution <span class="v">4K Ultra HD</span></li>
+    <li>HDR        <span class="v">HDR10+</span></li>
+  </ul>
+</section>
+
+<!-- 54 -->
+<section data-transition="fade">
+  <span class="label">4K Smart TV · Value</span>
+  <br>
+  <div class="compare">
+    <div class="cbox">
+      <h3>P7L</h3>
+      <p>4K · HDR10 · Smart TV<br>Great everyday viewing<br>for any family.</p>
+    </div>
+    <div class="cbox">
+      <h3>P6L</h3>
+      <p>4K · HDR · Smart TV<br>The entry point<br>to the TCL family.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 55 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">A TCL for<br>every budget.</h1>
+  <div class="line"></div>
+  <span class="subhead fragment fade-in">No customer walks away empty-handed.</span>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     09  ENTRY LEVEL — V6D · T6D
+══════════════════════════════════════════════════════════ -->
+
+<!-- 56 -->
+<section data-transition="fade">
+  <br>
+  <span class="label">Entry Level</span>
+  <h1 class="headline">V6D &amp; T6D</h1>
+  <div class="line"></div>
+  <span class="subhead">Smart TV. Real quality. TCL price.</span>
+</section>
+
+<!-- 57 -->
+<section data-transition="fade">
+  <span class="label">V6D &amp; T6D</span>
+  <ul class="feat">
+    <li>Resolution  <span class="v">Full HD / 4K</span></li>
+    <li>Smart OS    <span class="v">Google TV</span></li>
+    <li>HDR         <span class="v">HDR10</span></li>
+    <li>Connectivity<span class="v">WiFi · Bluetooth · HDMI</span></li>
+    <li>Positioning <span class="v">Best first TV</span></li>
+  </ul>
+</section>
+
+<!-- 58 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">Everyone deserves<br><span class="red">a great TV.</span></h1>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     10  SQD TECHNOLOGY — DEEP DIVE
+══════════════════════════════════════════════════════════ -->
+
+<!-- 59 -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Technology Deep Dive</span>
+  <h1 class="model-hero" style="color:#E8002D; font-size:8em;">SQD</h1>
+</section>
+
+<!-- 60 -->
+<section data-transition="fade">
+  <br>
+  <h1 class="headline">Sub-pixel<br>Quantum Dot.</h1>
+  <div class="line"></div>
+  <span class="subhead fragment fade-in">The next evolution beyond QLED.</span>
+  <span class="subhead fragment fade-in" style="margin-top:10px;">TCL-exclusive. Patent-protected.</span>
+</section>
+
+<!-- 61 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">Regular QLED:<br><span class="gray" style="font-weight:300;">One filter. Whole screen.</span></h1>
+</section>
+
+<!-- 62 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">SQD:<br><span class="red">Every pixel.</span><br><span style="font-weight:300; color:#ccc;">Its own filter.</span></h1>
+</section>
+
+<!-- 63 -->
+<section data-auto-animate data-transition="fade">
+  <br>
+  <span data-id="bil" class="num" style="font-size:5em; letter-spacing:-2px;">1.07B</span>
+</section>
+
+<!-- 64 -->
+<section data-auto-animate data-transition="fade">
+  <span data-id="bil" class="num" style="font-size:4em; letter-spacing:-2px;">1.07B</span>
+  <span class="spec">Color Combinations</span>
+  <span class="model">The human eye can see about 10 million.</span>
+</section>
+
+<!-- 65 — SQD vs competition -->
+<section data-transition="fade">
+  <span class="label">SQD vs The Competition</span>
+  <br>
+  <div class="compare">
+    <div class="cbox">
+      <h3 style="color:#888;">QLED</h3>
+      <p>Panel-level quantum dot filter.<br>Good color. Limited precision.<br>One filter for millions of pixels.</p>
+    </div>
+    <div class="cbox">
+      <h3 style="color:#888;">OLED</h3>
+      <p>Self-emissive pixels.<br>Great black levels.<br>Lower peak brightness. Burn-in risk.</p>
+    </div>
+    <div class="cbox" style="border-color:#E8002D;">
+      <h3>SQD</h3>
+      <p>Sub-pixel level filter.<br>Peak brightness of MiniLED.<br>Color precision per pixel.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     11  SALES TRAINING
+══════════════════════════════════════════════════════════ -->
+
+<!-- 66 — Was going to be 66... let me add a slide -->
+<section data-transition="fade">
+  <br><br>
+  <span class="label">Sales Training</span>
+  <h1 class="headline">How to sell TCL<br>in 2026.</h1>
+</section>
+
+<!-- 67 -->
+<section data-transition="fade">
+  <span class="label">The 3-Step Close</span>
+  <br>
+  <p class="step fragment fade-in"><span class="n">01</span> Ask: "What do you watch most?"</p>
+  <p class="step fragment fade-in"><span class="n">02</span> Match: Show the right model.</p>
+  <p class="step fragment fade-in"><span class="n">03</span> Demo: Let the screen close the sale.</p>
+</section>
+
+<!-- 68 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">Show.<br><span class="red">Don't tell.</span></h1>
+  <span class="subhead fragment fade-in" style="margin-top:28px;">The SQD difference is visible in 5 seconds.</span>
+</section>
+
+<!-- 69 — The SQD demo script -->
+<section data-transition="fade">
+  <span class="label">The SQD Demo — In-Store Script</span>
+  <br>
+  <p class="step fragment fade-in"><span class="n">1</span> Point to any QLED TV next to C7L/C8L.</p>
+  <p class="step fragment fade-in"><span class="n">2</span> Say: "See the green on that screen?"</p>
+  <p class="step fragment fade-in"><span class="n">3</span> Point to TCL: "Now look at ours."</p>
+  <p class="step fragment fade-in"><span class="n">4</span> Say: "That's SQD — sub-pixel filtering."</p>
+  <p class="step fragment fade-in"><span class="n">5</span> Ask: "Can you see the difference?"</p>
+</section>
+
+<!-- 70 — Upsell guide -->
+<section data-transition="fade">
+  <span class="label">Upsell Path</span>
+  <br>
+  <ul class="feat">
+    <li>Budget-conscious        <span class="v red">C7L — Best value SQD</span></li>
+    <li>Wants the best picture  <span class="v red">C8L — Dolby Vision 2 Max</span></li>
+    <li>Wants extreme size      <span class="v red">RM9L — 85" to 115"</span></li>
+    <li>Money is no object      <span class="v red">X11L — The pinnacle</span></li>
+    <li>Gaming focus            <span class="v red">C7L — 144Hz SQD</span></li>
+    <li>First-time buyer        <span class="v red">P6L or P7L — Smart 4K</span></li>
+  </ul>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     12  CLOSING
+══════════════════════════════════════════════════════════ -->
+
+<!-- 71 -->
+<section data-transition="fade">
+  <br><br>
+  <h1 class="headline">You are now<br>the expert.</h1>
+</section>
+
+<!-- 72 -->
+<section data-transition="fade">
+  <br>
+  <span class="label" style="color:#D4AF37; letter-spacing:5px;">Achievement</span>
+  <h1 class="certified">TCL<br>CERTIFIED.</h1>
+  <div class="line-gold"></div>
+  <span class="subhead" style="margin-top:18px;">You now sell the best TV technology in the world.</span>
+  <br>
+  <span class="tcl-logo" style="font-size:0.9em; margin-top:20px;">TCL · 2026</span>
+</section>
+
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    transition:           'fade',
+    transitionSpeed:      'slow',
+    backgroundTransition: 'fade',
+    controls:             true,
+    controlsLayout:       'bottom-right',
+    progress:             true,
+    hash:                 true,
+    center:               true,
+    width:                1920,
+    height:               1080,
+    margin:               0.05,
+    autoAnimateEasing:    'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+    autoAnimateDuration:  0.9,
+    keyboard: {
+      39: 'next',   // right arrow
+      37: 'prev',   // left arrow
+      40: 'next',   // down arrow
+      38: 'prev',   // up arrow
+      32: 'next',   // spacebar
+    }
+  });
+</script>
+</body>
+</html>
